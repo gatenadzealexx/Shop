@@ -6,7 +6,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', ping, name='ping'),
     path('auth/', include('users.urls')),
-    path('catalog/', include('catalog.urls'))
+    path('catalog/', include('catalog.urls')),
+    path('api/order/', include('order.urls'))
 ]
 
 

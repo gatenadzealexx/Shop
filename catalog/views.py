@@ -7,3 +7,4 @@ class ProductViewSet(viewsets.ModelViewSet):
     queryset = Product.objects.all().order_by('created')
     serializer_class = ProductSerializers
     permission_classes = [IsAuthenticated]
+
